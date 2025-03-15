@@ -1,0 +1,6 @@
+{
+    "codium.enable": false,
+    "codium.editorButton": false,
+    "codium.agent.onSave.improve": false,
+    "codium.agent.onSave.issues": false
+}

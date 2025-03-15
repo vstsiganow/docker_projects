@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: pg_hw1_image
+    restart: always
+    container_name: postgres_hw1
+    environment:
+      POSTGRES_USER: lastparagon
+      POSTGRES_PASSWORD: sl01
+      POSTGRES_DB: postgres
+    ports:
+      - "5433:5432"
+    volumes:
+      - DS_course:/var/lib/postgresql/DS_course
+      - prom_data:/var/lib/postgresql/prom_data   
+    
+volumes:
+  DS_course:
+  prom_data:
